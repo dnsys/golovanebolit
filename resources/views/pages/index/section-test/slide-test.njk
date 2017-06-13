@@ -1,0 +1,53 @@
+{% set promoImg = false %}
+{% set notShowCallToAction = true %}
+
+{% set sectionTitleStrong = "Тест на мигрень" %}
+{% set sectionTitleLight = false %}
+{% set description = "Ответьте на три вопроса о симптомах, сопровождающих Ваши головные боли в течении последних трех месяцев." %}
+
+
+{% extends "pages/index/_section-slide.njk" %}
+
+{% block slideContent %}
+    <div class="test" data-view="TestView">
+        <div class="test__wrapper-test" style="display: block">
+            <div class="test__counter">1/3</div>
+            <div class="test__question">
+                <div class="test__question-item test__question-item--active">Чувствовали ли Вы тошноту и недомогание?</div>
+                <div class="test__question-item">Раздражал ли Вас свет (намного сильнее чем в межприступный период)?</div>
+                <div class="test__question-item">Мешала ли головная боль Вам работать, учиться или заниматься другими делами в течении дня и более?</div>
+            </div>
+            <div class="test__answer">
+                <div class="test__answer-item">
+                    <div class="radio">
+                        <input id="answer-yes" type="radio" name="answer" value="1" checked>
+                        <label for="answer-yes">Да</label>
+                    </div>
+                </div>
+                <div class="test__answer-item">
+                    <div class="radio">
+                        <input id="answer-no" type="radio" name="answer" value="0">
+                        <label for="answer-no">Нет</label>
+                    </div>
+                </div>
+            </div>
+            <div class="test__btn">
+                <button class="button js-next-question">Далее</button>
+            </div>
+            <div class="test__paginate"></div>
+        </div>
+        <div class="test__wrapper-result" style="display: none">
+            <div class="test__result-text">
+                С очень высокой долей вероятности у Вас мигрень.
+            </div>
+            <div class="test__result-info">
+                Результаты теста носят информационный характер. Для уточнения диагноза обратитесь к врачу.
+            </div>
+            <div class="test__btn">
+                <a href="http://www.akrikhin.ru/product/catalog/detail.php?ID=257" class="button">вход для специалистов</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

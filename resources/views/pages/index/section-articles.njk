@@ -1,0 +1,13 @@
+{% set anchorSection = 'articles' %}
+
+{% set btnDown = "вопросы и ответы" %}
+{% set btnLeft = "база знаний по мигрени" %}
+
+
+{% extends "pages/index/_section-base.njk" %}
+
+{% block slides %}
+    {% include 'pages/index/section-articles/slide-index.njk' %}
+    {% include 'pages/index/section-articles/slide-aricles-list.njk' %}
+    {% include 'pages/index/section-articles/slide-aricles-item.njk' %}
+{% endblock %}

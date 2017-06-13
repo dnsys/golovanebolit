@@ -1,0 +1,70 @@
+.menu
+  font-size: 0
+
+  +max-w(1023px)
+    display: none
+    position: fixed
+    background: $color-blue
+    top: 0
+    left: 0
+    right: 0
+    padding: 25px 0 50px 0
+
+    +max-w(550px)
+      bottom: 0
+
+  &--active
+    display: block
+
+  &__logo
+    display: none
+    margin-bottom: 50px
+    text-align: center
+
+    +max-w(1023px)
+      display: block
+
+    img
+      max-width: 38px
+
+  &__item
+    display: inline-block
+
+    +max-w(1023px)
+      display: block
+      text-align: center
+      margin-bottom: 5px
+
+    > a
+      display: inline-block
+      position: relative
+      padding: 10px 15px
+      font-family: $font-family-base
+      font-size: 12px
+      line-height: 1
+      font-weight: $font-weight-bold
+      color: #fff
+      text-transform: uppercase
+      text-decoration: none
+
+      +max-w(1023px)
+        font-size: 16px
+
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        left: 15px
+        right: 15px
+        bottom: 0
+        height: 0
+        background: $color-green
+        transition: .2s height
+
+    &:not(.menu__item--selected):hover > a, &:not(.menu__item--selected).active > a
+      &:after
+        height: 3px
+
+    &--selected
+      > a
+        color: $color-green

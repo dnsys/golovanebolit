@@ -1,0 +1,45 @@
+<div class="slide">
+    <div class="section__inner">
+        <div class="container">
+            {% if promoMobImg %}
+            <div class="section__promo-mobile">
+                <div class="section__promo-mobile-img" style="background-image: url('{{ promoMobImg }}')"></div>
+            </div>
+            {% endif %}
+            <div class="section__content-wrapper">
+                <div class="section__content-inner">
+                    <div class="section__info">
+                        <div class="section__header">
+                            {% if sectionTitleStrong %}{{ sectionTitleStrong | safe }}{% endif %}
+                            {% if sectionTitleLight %}<br><span>{{ sectionTitleLight | safe }}</span>{% endif %}
+                            {% block headerSection %}{% endblock %}
+                        </div>
+                        {% if description %}
+                            <div class="section__description">
+                                {{ description | safe }}
+                            </div>
+                        {% endif %}
+                        <div class="clearfix"></div>
+                        {% block baseSectionContent %}{% endblock %}
+                        {% if not notShowCallToAction %}
+                            <div class="call-to-action js-btn-func">
+                                <div class="call-to-action__icon"><img src="{{ callToActionIcon }}" alt="icon"></div>
+                                <div class="call-to-action__title">{{ callToActionTitle }}</div>
+                                <div class="call-to-action__description">{{ callToActionDescr }}</div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    {% if promoImg %}
+                        <div class="section__promo-img">
+                            <img src="{{ promoImg }}" alt="promo">
+                        </div>
+                    {% else %}
+                        <div class="section__content">
+                            {% block slideContent %}{% endblock %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

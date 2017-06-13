@@ -1,0 +1,24 @@
+// https://developer.mozilla.org/en/docs/Web/CSS/font-weight?v=example
+
+$font-weight-thin: 100          // Thin (Hairline)
+$font-weight-exttra-light: 200  // Extra Light (Ultra Light)
+$font-weight-light: 300         // Light
+$font-weight-normal: 400        // Regular (normal)
+$font-weight-medium: 500        // Medium
+$font-weight-semi-bold: 600     // Semi Bold (Demi Bold)
+$font-weight-bold: 700          // Bold
+$font-weight-extra-bold: 800    // Extra Bold (Ultra Bold)
+$font-weight-black: 900         // Black (Heavy)
+
+
+@include font-face("OpenSans", "/fonts/OpenSans/normal/OpenSans-Light", $font-weight-light, $file-formats: eot ttf svg woff)
+@include font-face("OpenSans", "/fonts/OpenSans/normal/OpenSans", $font-weight-normal, $file-formats: eot ttf svg woff)
+@include font-face("OpenSans", "/fonts/OpenSans/normal/OpenSans-Semibold", $font-weight-semi-bold, $file-formats: eot ttf svg woff)
+@include font-face("OpenSans", "/fonts/OpenSans/normal/OpenSans-Bold", $font-weight-bold, $file-formats: eot ttf svg woff)
+@include font-face("OpenSans", "/fonts/OpenSans/normal/OpenSans-Extrabold", $font-weight-extra-bold, $file-formats: eot ttf svg woff)
+
+//ITALIC
+@include font-face("OpenSansItalic", "/fonts/OpenSans/italic/OpenSans-Italic", $font-weight-medium, $file-formats: eot ttf svg woff)
+@include font-face("OpenSansItalic", "/fonts/OpenSans/italic/OpenSans-BoldItalic", $font-weight-bold, $file-formats: eot ttf svg woff)
+
+@import "../../../fonts/fontello/css/fontello"

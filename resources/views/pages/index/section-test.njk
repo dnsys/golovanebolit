@@ -1,0 +1,14 @@
+{% set anchorSection = 'test' %}
+
+{% set btnDown = "факторы" %}
+{% set btnLeft = "пройти тест" %}
+
+
+{% extends "pages/index/_section-base.njk" %}
+
+{% block slides %}
+
+    {% include 'pages/index/section-test/slide-index.njk' %}
+    {% include 'pages/index/section-test/slide-test.njk' %}
+
+{% endblock %}

@@ -1,0 +1,29 @@
+.btn-back
+  position: absolute
+  left: -65px
+  top: 24%
+  cursor: pointer
+  transition: .3s all
+  z-index: 2
+
+  +max-w(1023px)
+    top: 145px
+
+  +max-w(550px)
+    top: 67px
+    width: 30px
+  +max-h(520px)
+    top: 53px
+  img
+    max-width: 100%
+
+  &--active
+    transition: .3s all .3s
+    left: 65px
+
+    +max-w(1023px)
+      left: 15px
+
+    +max-w(550px)
+      left: 0px
+      padding: 10px

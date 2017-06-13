@@ -1,0 +1,33 @@
+{% set promoImg = "/images/section/promo/promo_info-share.jpg" %}
+{% set promoMobImg = "/images/section/promo/promo_info-share_mobile.jpg" %}
+{% set sectionTitleStrong = "Головной боли" %}
+{% set sectionTitleLight = "нет" %}
+{% set description = "Информация предоставляется исключительно в справочных целях, при первых признаках заболевания проконсультируйтесь с врачом." %}
+
+{% set callToActionIcon = "/images/call-to-action-icon/icon-6.png" %}
+{% set callToActionTitle = "изучить факторы" %}
+{% set callToActionDescr = "И узнать причины мигрени" %}
+
+{% set notShowCallToAction = true %}
+
+{% extends "pages/index/_section-slide.njk" %}
+
+{% block baseSectionContent %}
+    {#<div class="share">
+        <div class="share__title">поделиться:</div>
+        <div class="share__list">
+            <a href="#" class="share__btn"><i class="share__icon icon-facebook"></i></a>
+            <a href="#" class="share__btn"><i class="share__icon icon-vk"></i></a>
+            <a href="#" class="share__btn"><i class="share__icon icon-twitter"></i></a>
+            <a href="#" class="share__btn"><i class="share__icon icon-odnoklassniki"></i></a>
+        </div>
+    </div>#}
+    <div class="copyright">
+        &copy; 2017 АКРИХИН. Все права защищены.<br>
+        Использование любых материалов и данных сайта разрешается только с письменного согласия администрации сайта.
+        Информация, представленная на сайте, не должна использоваться для самостоятельной диагностики и лечения заболеваний
+        и не может служить заменой очной консультации врача.
+    </div>
+{% endblock %}
+
+

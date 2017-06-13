@@ -1,0 +1,23 @@
+.button
+  display: inline-block
+  padding: 21px 46px
+  font-family: $font-family-base
+  font-weight: $font-weight-bold
+  font-size: 16px
+  line-height: 1
+  color: #fff
+  text-transform: uppercase
+  text-decoration: none
+  border: none
+  background: $color-green
+  outline: none
+  cursor: pointer
+  min-width: 195px
+
+  +max-w(550px)
+    font-size: 12px
+    min-width: 150px
+    padding: 15px 30px
+
+  &:hover
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3)

@@ -1,0 +1,12 @@
+{% set anchorSection = 'centers' %}
+
+{% set btnDown = "головной боли нет" %}
+{% set btnLeft = "адреса центров лечения" %}
+
+
+{% extends "pages/index/_section-base.njk" %}
+
+{% block slides %}
+    {% include 'pages/index/section-centers/slide-index.njk' %}
+    {% include 'pages/index/section-centers/slide-centers.njk' %}
+{% endblock %}

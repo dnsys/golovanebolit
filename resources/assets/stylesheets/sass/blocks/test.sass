@@ -1,0 +1,150 @@
+.test
+  //float: right
+  background: #f4f4f4
+  padding: 70px
+  width: 770px
+  height: 100%
+  position: relative
+
+  @media (min-width: 1024px) and (max-height: 725px)
+    padding: 40px
+
+  +max-w(1023px)
+    width: 100%
+
+  +max-w(767px)
+    width: auto
+    padding: 45px 15px
+    margin: 0 -15px
+
+  +max-w(550px)
+    padding: 20px 15px
+  +max-h(520px)
+    padding: 10px 15px
+  &__wrapper-result
+    display: none
+    padding: 100px 30px 0 30px
+
+    +max-w(1023px)
+      padding-top: 0
+
+  &__counter
+    font-family: $font-family-base
+    font-weight: $font-weight-bold
+    font-size: 132px
+    letter-spacing: -0.05em
+    color: #fff
+    text-align: center
+    margin-bottom: 29px
+
+    +max-w(1023px)
+      font-size: 94px
+
+    +max-w(640px)
+      font-size: 15vw
+      margin-bottom: 0.3em
+    +max-dh(640px)
+      font-size: 12vw
+
+  &__question
+    margin-bottom: 40px
+
+    +max-w(550px)
+      margin-bottom: 25px
+    +max-dh(640px)
+      margin-bottom: 20px
+    +max-h(520px)
+      margin-bottom: 10px
+  &__question-item
+    display: none
+    font-family: $font-family-base
+    font-weight: $font-weight-bold
+    font-size: 24px
+    color: $color-green
+    line-height: (34 / 24)
+    text-align: center
+
+    +max-w(550px)
+      font-size: 21px
+
+    +max-w(450px)
+      font-size: 18px
+
+    +max-dh(640px)
+      line-height: 20px
+    +max-h(520px)
+      font-size: 15px
+
+    &--active
+      display: block
+
+  &__answer
+    text-align: center
+    margin-bottom: 40px
+
+    +max-w(550px)
+      margin-bottom: 20px
+    +max-h(520px)
+      margin-bottom: 10px
+
+  &__answer-item
+    display: inline-block
+    padding: 0 20px
+
+  &__btn
+    text-align: center
+
+  &__result-text
+    font-family: $font-family-base
+    font-weight: $font-weight-bold
+    font-size: 24px
+    color: $color-green
+    line-height: (34 / 24)
+    text-align: center
+    margin-bottom: 40px
+
+    +max-w(550px)
+      font-size: 21px
+
+    +max-w(450px)
+      font-size: 18px
+    +max-h(600px)
+      margin-bottom: 15px
+    +max-dh(640px)
+      line-height: 20px
+  &__result-info
+    font-family: $font-family-base
+    font-weight: $font-weight-normal
+    font-size: 14px
+    line-height: (28 / 14)
+    color: #828282
+    text-align: center
+    margin-bottom: 40px
+    +max-h(600px)
+      margin-bottom: 15px
+    +max-dh(640px)
+      line-height: 20px
+  &__paginate
+    position: absolute
+    bottom: -30px
+    font-size: 0
+    left: 50%
+    transform: translate(-50%,0)
+
+  &__paginate-item
+    display: inline-block
+    border-radius: 50%
+    border: 2px solid #fff
+    height: 12px
+    width: 12px
+    margin: 0 5px
+
+    +max-w(1023px)
+      border-color: #dcdcdc
+
+    &--active
+      background: #fff
+
+      +max-w(1023px)
+        background: $color-blue
+        border-color: $color-blue

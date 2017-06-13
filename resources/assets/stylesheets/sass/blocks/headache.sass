@@ -1,0 +1,104 @@
+.headache
+  float: right
+  background: white
+  padding: 85px 20px
+  padding-bottom: 0px
+  width: 615px
+  height: 568px
+  overflow-y: scroll
+
+  &__photo-desktop
+    +max-w(1023px)
+      display: none
+
+  &__photo-mobile
+    display: none
+    +max-w(1023px)
+      display: block
+
+  &__text
+    font-family: $font-family-base
+    font-weight: $font-weight-normal
+    font-size: 15px
+    color: #818181
+    //padding: 0 40px
+    line-height: (28 / 16)
+    clear: both
+    p
+      margin-bottom: 43px
+
+    ul
+      list-style-type: disc
+      margin-bottom: 30px
+
+  &__list-img-wrapper
+    float: left
+    width: 24%
+
+    +max-w(767px)
+      float: none
+
+  &__list-img
+    width: 100%
+    padding-top: 100%
+    border-radius: 50%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+
+  &__list
+    margin: 0 -15ps
+    +clearfix
+
+    &_item
+      //float: left
+      display: inline-block
+      margin-bottom: 15px
+      padding: 15px
+      cursor: pointer
+
+      &:hover
+        background: #f9f9f9
+
+      &:last-child
+        margin-bottom: 0
+
+      &_text
+        float: left
+        padding-left: 25px
+        width: (100% - 24%)
+
+        +max-w(767px)
+          float: none
+          padding-left: 0
+          padding-top: 25px
+          width: 100%
+
+        &--desc
+          font-family: $font-family-base
+          font-weight: $font-weight-normal
+          font-size: 14px
+          color: #818181
+          line-height: (28 / 14)
+          clear: both
+          +max-h(640px)
+            font-size: 12px
+            line-height: 1.4
+
+        &--head
+          //position: relative
+          font-family: $font-family-base
+          font-weight: $font-weight-bold
+          color: $color-green
+          font-size: 16px
+          padding-bottom: 20px
+          line-height: 1
+          text-decoration: none
+          +max-h(670px)
+            font-size: 14px
+            padding-bottom: 10px
+          .headache__list_item:hover &
+            text-decoration: underline
+  &__btn
+    text-align: center
+

@@ -1,0 +1,12 @@
+{% set anchorSection = 'factors' %}
+
+{% set btnDown = "статьи о мигрени" %}
+{% set btnLeft = "факторы" %}
+
+
+{% extends "pages/index/_section-base.njk" %}
+
+{% block slides %}
+    {% include 'pages/index/section-factor/slide-index.njk' %}
+    {% include 'pages/index/section-factor/slide-factors.njk' %}
+{% endblock %}

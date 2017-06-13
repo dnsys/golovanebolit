@@ -1,0 +1,26 @@
+.header
+  position: fixed
+  top: 30px
+  left: 0
+  right: 0
+  z-index: 3
+  padding: 0 15px
+
+  +max-w(550px)
+    padding: 0
+    top: 8px
+
+  &__logo
+    float: left
+    margin-left: (100% / 12)
+    padding-left: 15px
+
+    +max-w(1023px)
+      margin-left: 35px
+      padding-left: 0
+
+    a
+      text-decoration: none
+
+  &__menu
+    float: right

@@ -1,0 +1,24 @@
+<section class="section" data-anchor="{{ anchorSection }}">
+
+    {% block slides %}{% endblock %}
+
+        <div class="section__footer">
+            <div class="container">
+                <div class="section__footer-inner">
+                    {% if not notShowFooter %}
+                    <div class="section__next-slide js-btn-down"><img src="/images/green_arrow_down.png" alt="next section">{{ btnDown }}</div>
+                    <div class="section__init-func js-btn-func">
+                        <span class="section__init-text">
+                            <span class="section__init-open">{{ btnLeft }}</span>
+                            <span class="section__init-close">Закрыть</span>
+                        </span>
+                        <span class="section__init-icon"></span>
+                    </div>
+                    {% else %}
+                    <div class="section__init-func js-btn-top"><img src="/images/white_arrow_up.png" alt="run interative"></div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+</section>

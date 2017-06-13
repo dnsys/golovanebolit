@@ -1,0 +1,98 @@
+.center-info
+  border-bottom: 1px solid #e8e8e8
+  margin-bottom: 15px
+  +max-h(670px)
+    width: 90%
+  &__doctors
+    padding-top: 25px
+    display: none
+    width: 400px
+    +media-480
+      width: 100%
+    &_text
+      font-family: $font-family-base
+      font-weight: $font-weight-normal
+      font-size: 14px
+      color: #818181
+      line-height: (28 / 14)
+      margin-bottom: 20px
+      float: left
+      clear: both
+      &>span
+        color: $color-green
+  &__name
+    font-family: $font-family-base
+    font-weight: $font-weight-bold
+    font-size: 18px
+    line-height: (30 / 18)
+    color: $color-blue
+    margin-bottom: 20px
+    +media-639
+      font-size: 16px
+
+  &__address
+    font-family: $font-family-base
+    font-weight: $font-weight-normal
+    font-size: 16px
+    line-height: (30 / 16)
+    color: #828282
+    margin-bottom: 20px
+    +media-639
+      font-size: 13px
+  &__footer
+    margin-bottom: 40px
+
+  &__map-link
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    font-family: $font-family-base
+    font-weight: $font-weight-normal
+    font-size: 16px
+    color: #828282
+    text-decoration: none
+    padding: 5px 0 5px 25px
+    margin-right: 45px
+
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      top: 0
+      width: 17px
+      height: 26px
+      background:
+        image: url('/images/map_marker.png')
+        repeat: no-repeat
+
+
+    &:hover
+      text-decoration: underline
+
+  &__selector
+    display: inline-block
+    vertical-align: middle
+
+    width: 250px
+    background: $color-green
+    font-family: $font-family-base
+    font-weight: $font-weight-normal
+    font-size: 16px
+    color: #fff
+    padding: 15px 20px
+    border: none
+    outline: none
+    cursor: pointer
+    > img
+      transform: rotate(90deg)
+      transition: all 0.5s
+      float: right
+    &_head
+      float: left
+    +media-320
+      width: 220px
+
+.rotate_img
+  transform: rotate(270deg) !important
+  transition: all 0.4s

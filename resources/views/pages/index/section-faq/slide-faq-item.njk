@@ -1,0 +1,319 @@
+{% set promoImg = false %}
+{% set notShowCallToAction = true %}
+
+{% set sectionTitleStrong = false %}
+{% set sectionTitleLight = false %}
+{% set description = false %}
+
+
+{% extends "pages/index/_section-slide.njk" %}
+
+{% block headerSection %}
+    <div class="question-header" data-faq-id="faq-1">Каковы основные симптомы<br> мигрени?</div>
+    <div class="question-header"  data-faq-id="faq-2">Как отличить мигрень от<br> проcтых головных болей?</div>
+    <div class="question-header"  data-faq-id="faq-3">Как бороться с мигренью?</div>
+    <div class="question-header"  data-faq-id="faq-4">Какие существуют<br> современные препараты<br> для лечения мигрени?</div>
+    <div class="question-header"  data-faq-id="faq-5">Существуют ли<br> немедикаментозные<br> способы борьбы с мигренью?</div>
+
+    <div class="question-header"  data-faq-id="faq-6">Как питание влияет на<br> частоту и силу<br> головных болей?</div>
+    <div class="question-header"  data-faq-id="faq-7">Чем могут быть вызваны<br> головные боли у беременных?</div>
+    <div class="question-header"  data-faq-id="faq-8">Какие специфические<br> признаки характерны для<br> заболеваний головного мозга?</div>
+    <div class="question-header"  data-faq-id="faq-9">Что делать самостоятельно<br> до приезда врача?</div>
+    <div class="question-header"  data-faq-id="faq-10">Какие препараты особенно<br> эффективны при мигрени?</div>
+    <div class="question-header"  data-faq-id="faq-11">Какие осложнения<br> возможны у мигрени?</div>
+    <div class="question-header"  data-faq-id="faq-12">Какие анализы нужно сделать<br> для постановки диагноза?</div>
+    <div class="question-header"  data-faq-id="faq-13">При каких симптомах<br> наиболее велик риск<br> развития осложнений?</div>
+    <div class="question-header"  data-faq-id="faq-14">Можно ли вылечить мигрень?</div>
+{% endblock %}
+
+
+{% block slideContent %}
+    <div class="scrollable-block">
+        <div class="scrollable-block__content js-faq-contents">
+            <div class="question-block" data-faq-id="faq-1">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        О мигрени говорят тогда, когда человек жалуется на приступы сильной головной боли,
+                        усиливающейся от внешних раздражителей (яркого света, громких звуков), тошноту и иногда рвоту.
+                        Обычно приступы длятся не дольше суток, их периодичность индивидуальна: от 1 раза в неделю до 1 раза в 2 месяца.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-2">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        При мигрени головная боль имеет несколько характерных признаков: она пульсирующая, часто односторонняя, может появляться
+                        в любое время суток и усиливаться при физической нагрузке. Как правило, человек может связать появление
+                        головной боли с провоцирующим фактором – триггером.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-3">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        Важно как можно раньше начать адекватное лечение. Некоторые ошибаются, думая, что боль можно перетерпеть,
+                        в таком случае мигрень становится хронической. Для лечения применяется несколько групп лекарственных средств:
+                        триптаны, нестероидные противовоспалительные препараты и превентивные средства. Лечение мигрени должно быть назначено врачом.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-4">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        Специально для борьбы с мигренью создана группа средств – триптаны. Они ингибируют действие серотониновых 5-HT1-рецепторов.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-5">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        Среди немедикаментозных методов наиболее эффективными считаются обеспечение покоя, сон,
+                        прием небольшого количества кофеина и холодный компресс на область, где ощущается боль.
+                        Некоторые чувствуют облегчение после того, как полежат некоторое время в темной комнате в удобной позе, с подушками под головой и шеей.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-6">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        Замечено, что некоторые продукты могут вызывать приступ мигрени,
+                        это объясняется наличием в них таких веществ, как нитриты, амин, глутамат, хлорид натрия.
+                        Некоторые продукты люди, страдающие мигренью, называют триггерами.
+                        Чаще всего среди них: мясо и колбасы, рыба, сахаросодержащие продукты, цитрусовые, бобовые, алкогольные напитки и т. д.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-7">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        При наступлении беременности у женщины происходит изменение гормонального фона и перестройка
+                        работы органов и систем. В связи с этим может либо начаться, либо исчезнуть ранее мучавшая мигрень.
+                        Как правило, женщины жалуются не только на головную боль, но и на появление чувства тревоги, страха.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-8">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        Заболевания головного мозга могут быть вызваны различными факторами (инфекцией, травмой, опухолью, нарушением кровообращения).
+                        В зависимости от этиогенеза признаки могут быть различными – от головной боли до ригидности мышц, онемения конечностей или расстройства сознания и памяти.
+                        В любом случае при появлении тревожных симптомов следует как можно скорее обратиться к врачу, без него определить характер нарушения крайне сложно.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-9">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        При появлении сильной головной боли нужно обеспечить больному покой: удобно уложить, сделать преграду для солнечного света,
+                        исключить появление резких громких звуков. Можно выпить нестероидный противовоспалительный препарат, который снижает уровень боли.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-10">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        Наиболее эффективными при мигрени считаются специфические препараты – триптаны.
+                        Они способствуют сужению расширенных сосудов, находящихся вокруг головного мозга. Препарат подбирается врачом индивидуально,
+                        даже в одной группе одно лекарство может облегчать состояние человека, а другое – нет. Эти препараты назначаются при самых сильных болях.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-11">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        Осложнениями принято считать хроническую мигрень, мигренозный статус и мигренозный инфаркт.
+                        Они могут развиться как при нерациональном использовании обезболивающих средств,
+                        так и при игнорировании лечения. Также создаются условия для перехода мигрени в хроническую форму,
+                        если человек не старается исключить действие триггеров.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-12">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        При мигрени опытный специалист может поставить диагноз после тщательно собранного анамнеза.
+                        Обычно никакие дополнительные анализы не назначаются, достаточно проследить, как часто возникает головная боль,
+                        что провоцирует начало приступа и каков характер боли.
+                        Дополнительное исследование проводится при подозрении сочетания мигрени с другим заболеванием.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-13">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        Предположить развитие осложнения можно, если приступы мигрени участились или увеличилась их продолжительность.
+                        Если назначенное врачом лечение не дает ожидаемого эффекта,
+                        стоит также обратить на это внимание и еще раз проконсультироваться у специалиста.
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" data-faq-id="faq-14">
+                <div class="question-block__respondent">
+                    <div class="question-block__respondent-photo">
+                        <img src="./images/respondents/respondent1.jpg" alt="">
+                    </div>
+                    <div class="question-block__respondent-info">
+                        <div class="question-block__respondent-position">
+                            Отвечает заведующий кафедрой изучения мигрении НИИ РФКЦП
+                        </div>
+                        <div class="question-block__respondent-name">
+                            Склифосовкий Эраст, д.м.н
+                        </div>
+                    </div>
+                    <div class="question-block__answer">
+                        Среди специалистов принято считать, что вылечить мигрень невозможно.
+                        Однако у большинства пациентов с возрастом приступы становятся реже и слабее.
+                        Зафиксированы и случаи, когда приступы мигрени полностью исчезали. Важно строго соблюдать
+                        назначения врача и не пренебрегать профилактическими мероприятиями,
+                        к которым относятся и поддержание здорового образа жизни, и исключение действия триггеров.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

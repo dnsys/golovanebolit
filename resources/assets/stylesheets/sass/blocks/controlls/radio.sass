@@ -1,0 +1,53 @@
+.radio
+
+  input[type=radio]
+    display: none
+
+  label
+    display: inline-block
+    padding-left: 40px
+    padding-top: 7px
+    padding-bottom: 7px
+    position: relative
+    font-family: $font-family-base
+    font-weight: $font-weight-bold
+    font-size: 24px
+    color: $color-blue
+    cursor: pointer
+
+    +max-w(450px)
+      font-size: 18px
+
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      height: 37px
+      width: 37px
+      border-radius: 50%
+      background: #fff
+      box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.3)
+
+      +max-w(450px)
+        height: 25px
+        width: 25px
+
+  input[type=radio]:checked + label
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      top: 10px
+      left: 10px
+      height: 18px
+      width: 18px
+      border-radius: 50%
+      background: $color-blue
+
+      +max-w(450px)
+        height: 12px
+        width: 12px
+        top: 7px
+        left: 6.5px

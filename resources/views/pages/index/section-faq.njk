@@ -1,0 +1,13 @@
+{% set anchorSection = 'faq' %}
+
+{% set btnDown = "центры лечения" %}
+{% set btnLeft = "ответы специалистов" %}
+
+
+{% extends "pages/index/_section-base.njk" %}
+
+{% block slides %}
+    {% include 'pages/index/section-faq/slide-index.njk' %}
+    {% include 'pages/index/section-faq/slide-faq-list.njk' %}
+    {% include 'pages/index/section-faq/slide-faq-item.njk' %}
+{% endblock %}

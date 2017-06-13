@@ -1,0 +1,29 @@
+{% set promoImg = false %}
+{% set notShowCallToAction = true %}
+
+{% set sectionTitleStrong = "Эмоциональный стресс" %}
+{% set sectionTitleLight = false %}
+{% set description = "Краткое информационное раскрытие сути фактора, иначе без этого не совсем ясно  в чем суть некоторых." %}
+
+
+{% extends "pages/index/_section-slide.njk" %}
+
+{% block slideContent %}
+    <div class="factors-slider">
+        <div class="factors-slider__wrapper-items owl-carousel">
+            <img src="./images/section/factors/slider/1.png" alt="factors slider img">
+            <img src="./images/section/factors/slider/1.png" alt="factors slider img">
+            <img src="./images/section/factors/slider/1.png" alt="factors slider img">
+            <img src="./images/section/factors/slider/1.png" alt="factors slider img">
+            <img src="./images/section/factors/slider/1.png" alt="factors slider img">
+        </div>
+        <div class="factors-slider__navigation">
+            <div class="factors-slider__nav-prev"></div>
+            <div class="factors-slider__dots"></div>
+            <div class="factors-slider__nav-next"></div>
+        </div>
+    </div>
+
+{% endblock %}
+
+

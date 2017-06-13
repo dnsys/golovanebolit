@@ -1,0 +1,83 @@
+{% set promoImg = false %}
+{% set notShowCallToAction = true %}
+
+{% set sectionTitleStrong = "Центры" %}
+{% set sectionTitleLight = "лечения" %}
+{% set description = " Адреса региональных центров головной боли и список ведущих специалистов." %}
+
+
+{% extends "pages/index/_section-slide.njk" %}
+
+{% block slideContent %}
+    <div class="scrollable-block">
+        <div class="scrollable-block__content">
+            <div class="centers">
+                <!-- tabs -->
+                <ul class="centers__cities-list line-list">
+                    <li class="line-list__item"><a href="#rostov">Ростов-на-Дону</a></li>
+                    <li class="line-list__item"><a href="#rostov">Нижний Новгород</a></li>
+                    <li class="line-list__item"><a href="#rostov">Москва</a></li>
+                    <li class="line-list__item"><a href="#rostov">Волгоград</a></li>
+                    <li class="line-list__item"><a href="#rostov">Уфа</a></li>
+                    <li class="line-list__item"><a href="#rostov">Санкт- Петербург</a></li>
+                    <li class="line-list__item"><a href="#rostov">Ростов-на-Дону</a></li>
+                    <li class="line-list__item"><a href="#rostov">Нижний Новгород</a></li>
+                    <li class="line-list__item"><a href="#rostov">Москва</a></li>
+                    <li class="line-list__item"><a href="#rostov">Волгоград</a></li>
+                    <li class="line-list__item"><a href="#rostov">Уфа</a></li>
+                    <li class="line-list__item"><a href="#rostov">Санкт- Петербург</a></li>
+                </ul>
+
+                <!-- tabs-content -->
+                <ul class="centers__city-info" id="rostov">
+                    <li class="line-list__item">
+                        <div class="center-info">
+                            <div class="center-info__name">Областной центр диагностики и лечения головной боли</div>
+                            <div class="center-info__address">Пушкинская ул., 127, Ростов-на-Дону, Ростовская обл., 344000 Тел. 8 (863) 227-00-00</div>
+                            <div class="center-info__footer">
+                                <a href="#" class="center-info__map-link">Карта проезда</a>
+                                <div class="center-info__selector">
+                                    <p class="center-info__selector_head">Выберите врача</p>
+                                    <img src="/images/section/factors/slider/arrow-next.png" alt="">
+
+                                </div>
+                                <div class="center-info__doctors">
+                                    <p class="center-info__doctors_text"><span>Петручик Ольга Викторовна</span> - врач-невролог, руководитель
+                                        "Областного кабинета головокружения и вестибулярных нарушений"</p>
+                                    <p class="center-info__doctors_text"><span>Петручик Ольга Викторовна</span> - врач-невролог, руководитель
+                                        "Областного кабинета головокружения и вестибулярных нарушений"</p>
+                                    <p class="center-info__doctors_text"><span>Петручик Ольга Викторовна</span> - врач-невролог, руководитель
+                                        "Областного кабинета головокружения и вестибулярных нарушений"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="line-list__item">
+                        <div class="center-info">
+                            <div class="center-info__name">Областной центр диагностики и лечения головной боли</div>
+                            <div class="center-info__address">Пушкинская ул., 127, Ростов-на-Дону, Ростовская обл., 344000 Тел. 8 (863) 227-00-00</div>
+                            <div class="center-info__footer">
+                                <a href="#" class="center-info__map-link">Карта проезда</a>
+                                <div class="center-info__selector">
+                                    <p class="center-info__selector_head">Выберите врача</p>
+                                    <img src="/images/section/factors/slider/arrow-next.png" alt="">
+
+                                </div>
+                                <div class="center-info__doctors">
+                                    <p class="center-info__doctors_text"><span>Сергеев Михаил Ефремович</span> - врач-невролог, руководитель
+                                        "Областного кабинета головокружения и вестибулярных нарушений"</p>
+                                    <p class="center-info__doctors_text"><span>Петручик Ольга Викторовна</span> - врач-невролог, руководитель
+                                        "Областного кабинета головокружения и вестибулярных нарушений"</p>
+                                    <p class="center-info__doctors_text"><span>Петручик Ольга Викторовна</span> - врач-невролог, руководитель
+                                        "Областного кабинета головокружения и вестибулярных нарушений"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

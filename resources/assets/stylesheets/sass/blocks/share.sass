@@ -1,0 +1,40 @@
+.share
+  margin-bottom: 55px
+
+  &__title
+    font-family: $font-family-base
+    font-weight: $font-weight-bold
+    font-size: 14px
+    letter-spacing: 0.025em
+    color: #000
+    text-transform: uppercase
+    margin-bottom: 15px
+
+  &__btn
+    display: inline-block
+    width: 43px
+    height: 43px
+    border-radius: 50%
+    border: 1px solid #e7e7e7
+    color: $color-green
+    text-align: center
+    transition: .3s all
+
+    &:hover
+      color: #fff
+      background: $color-green
+      border-color: $color-green
+
+    & + &
+      margin-left: 12px
+
+  &__icon
+    line-height: 40px
+    font-size: 20px
+
+    &.icon-facebook
+      font-size: 22px
+
+    &.icon-vk
+      position: relative
+      left: -3px

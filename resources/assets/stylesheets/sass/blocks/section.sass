@@ -1,0 +1,278 @@
+.section
+
+  &__inner
+    padding: 65px 0
+
+    +max-w(1023px)
+      padding-top: 90px
+
+    +max-w(550px)
+      padding-top: 60px
+
+  &__content-wrapper
+    margin-left: (100% / 12)
+    padding: 0 15px
+
+    +max-w(1023px)
+      margin-left: 0
+
+  &__content-inner
+    position: relative
+    +clearfix
+
+  &__content
+    float: right
+    max-width: 770px
+    width: 100%
+    height: 570px
+    //background: #fff
+
+    @media (min-width: 1024px) and (max-height: 725px)
+      height: 500px
+
+    +max-w(1023px)
+      max-width: initial
+      float: none
+      height: auto
+      margin: 0 auto
+
+
+  &__promo-img
+    float: right
+
+    @media (min-width: 1024px) and (max-height: 725px)
+      height: 500px
+      overflow: hidden
+
+    +max-w(1023px)
+      display: none
+
+  &__info
+    position: absolute
+    top: 75px
+    left: 0
+    width: auto
+    z-index: 2
+
+    @media (min-width: 1024px) and (max-height: 725px)
+      top: 40px
+
+    +max-w(1023px)
+      position: static
+      margin-left: 35px
+      margin-top: 50px
+
+    +max-w(640px)
+      margin-top: 8vw
+
+    +max-w(550px)
+      margin-top: 4vw
+      margin-left: 15px
+      padding-right: 35px
+    +max-h(520px)
+      margin-top: 0px
+    &--left
+      left: -200px
+  &__header
+    font-family: $font-family-base
+    font-weight: $font-weight-bold
+    font-size: 48px
+    color: $color-blue
+    line-height: (50 / 48)
+    letter-spacing: -0.05em
+    margin-bottom: 45px
+    float: left
+    clear: both
+
+    +max-w(1023px)
+      font-size: 38px
+      margin-bottom: 30px
+
+    +max-w(640px)
+      font-size: 6vw
+      margin-bottom: 0.9em
+
+    +max-w(550px)
+      font-size: 5.5vw
+      line-height: (24 / 18)
+      margin-bottom: .9em
+    +max-h(520px)
+      margin-bottom: 0.4em
+    span
+      font-weight: $font-weight-light
+
+  &__description
+    font-family: $font-family-base
+    font-weight: $font-weight-normal
+    font-size: 14px
+    color: #818181
+    line-height: (28 / 14)
+    margin-bottom: 50px
+    max-width: 375px
+    float: left
+    clear: both
+
+    +max-w(1023px)
+      margin-bottom: 29px
+      max-width: 400px
+
+    +max-w(640px)
+      margin-bottom: 6vw
+
+    +max-w(550px)
+      line-height: (22 / 12)
+
+    +max-w(475px)
+      font-size: 12px
+    +max-w(321px)
+      line-height: 1.5
+
+  &__ill
+    margin-bottom: 50px
+    width: 194px
+    height: 194px
+    text-align: center
+    //float: left
+    //clear: both
+    border-radius: 50%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+    +max-w(1023px)
+      margin-bottom: 30px
+
+    +max-w(550px)
+      width: 96px
+      height: 96px
+
+    img
+      width: 100%
+    &--inside
+      max-width: 230px
+
+  &__footer
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 23px
+    z-index: 1
+    padding: 0 15px
+
+    +max-w(550px)
+      padding: 0
+
+  &__footer-inner
+    position: relative
+
+  &__next-slide
+    //float: left
+    position: absolute
+    bottom: 0
+    left: 0
+    cursor: pointer
+    margin-left: (100% / 12)
+    padding: 7px
+    padding-left: 12px
+    font-family: $font-family-base
+    font-weight: $font-weight-bold
+    font-size: 12px
+    color: $color-green
+    text-transform: uppercase
+    vertical-align: middle
+    +max-h(520px)
+      bottom: -12px
+      margin-left: -2px
+    img
+      display: inline-block
+      vertical-align: sub
+      margin-right: 10px
+
+  &__init-func
+    //float: right
+    position: absolute
+    bottom: 0
+    right: 0
+    cursor: pointer
+    font-family: $font-family-base
+    font-weight: $font-weight-bold
+    font-size: 12px
+    color: #fff
+    text-transform: uppercase
+    padding: 7px
+    padding-right: 15px
+    vertical-align: middle
+
+    +max-w(550px)
+      padding-right: 6px
+
+  &__init-text
+    +max-w(1023px)
+      display: none
+
+  &__init-icon
+    display: inline-block
+    //width: 10px
+    //height: 16px
+    position: relative
+    vertical-align: middle
+    overflow: hidden
+    padding: 2px
+    margin-left: 8px
+    right: -4px
+
+    &:before, &:after
+      content: ""
+      display: block
+      height: 2px
+      background: #fff
+      width: 10px
+      transform-origin: 0 50%
+      transition: .3s all
+
+    &:before
+      margin-bottom: 12px
+      transform: rotate(45deg)
+
+    &:after
+      transform: rotate(-45deg)
+
+  &__init-func--active &__init-icon
+    &:before, &:after
+      width: 20px
+
+
+  &__init-open
+    vertical-align: middle
+    display: inline-block
+
+  &__init-close
+    vertical-align: middle
+    display: none
+
+  &__init-func--active &__init-close
+    display: inline-block
+
+  &__init-func--active &__init-open
+    display: none
+
+
+  &__promo-mobile
+    max-width: 768px
+    display: none
+    margin: 0 auto
+    margin-bottom: 20px
+
+    +max-w(1023px)
+      display: block
+    +max-h(520px)
+      margin-bottom: 5px
+
+
+  &__promo-mobile-img
+    width: 100%
+    padding-top: 41%
+    background:
+      position: center center
+      size: cover
+      repeat: no-repeat

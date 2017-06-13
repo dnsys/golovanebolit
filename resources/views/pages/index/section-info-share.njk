@@ -1,0 +1,14 @@
+{% set anchorSection = 'info-share' %}
+
+{% set btnDown = "статьи о мигрени" %}
+{% set btnLeft = "факторы" %}
+
+{% set notShowFooter = true %}
+
+{% extends "pages/index/_section-base.njk" %}
+
+{% block slides %}
+
+    {% include 'pages/index/section-info-share/slide-index.njk' %}
+    
+{% endblock %}

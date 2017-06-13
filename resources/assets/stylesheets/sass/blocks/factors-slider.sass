@@ -1,0 +1,113 @@
+.factors-slider
+  //float: right
+  height: 100%
+  width: 100%
+  background: #f4f4f4
+  position: relative
+
+  +max-w(1023px)
+    width: auto
+    margin: 0 -15px
+    padding: 35px 0
+  +max-h(520px)
+    padding: 20px 0
+  &__wrapper-items
+    position: relative
+    height: 100%
+    width: 100%
+    //max-width: 670px
+    //max-height: 570px
+    background: #f4f4f4
+    z-index: 0
+  .owl-stage
+    display: table
+    height: 100%
+  .owl-item
+    display: table-cell
+    vertical-align: middle
+    float: none
+    //text-align: center
+    img
+      display: block
+      max-width: 100%
+      width: auto
+      margin: 0 auto
+
+      +max-w(1023px)
+        max-width: 235px
+
+      +max-w(550px)
+        max-width: 155px
+      +max-dh(640px)
+        max-width: 125px
+
+
+  .owl-stage-outer
+    height: 100%
+
+  &__navigation
+    text-align: center
+    position: absolute
+    bottom: -45px
+    left: 0
+    width: 100%
+    +clearfix
+
+  &__nav-prev
+    display: inline-block
+    vertical-align: middle
+    margin-right: 20px
+    width: 10px
+    height: 18px
+    background: 
+      image: url("/images/section/factors/slider/arrow-slider-arrow.png")
+      repeat: no-repeat
+      position-x: -12px
+    cursor: pointer
+
+    +max-w(1023px)
+      background-position-x: -36px
+
+  &__nav-next
+    display: inline-block
+    vertical-align: middle
+    margin-left: 20px
+    width: 10px
+    height: 18px
+    background:
+      image: url("/images/section/factors/slider/arrow-slider-arrow.png")
+      repeat: no-repeat
+      position-x: 0
+    cursor: pointer
+
+    +max-w(1023px)
+      background-position-x: -24px
+
+  &__dots
+    display: inline-block
+    vertical-align: middle
+    .owl-dot
+      display: inline-block
+      padding: 0 5px
+      span
+        display: block
+        border-radius: 50%
+        border: 2px solid $color-white
+        width: 12px
+        height: 12px
+        transition: .3s all
+
+        +max-w(1023px)
+          border: 2px solid #dddddd
+
+      &:hover
+        cursor: pointer
+        span
+          transform: scale(1.4)
+      &.active
+        span
+          background: $color-white
+
+          +max-w(1023px)
+            background: $color-blue
+            border: 2px solid $color-blue
